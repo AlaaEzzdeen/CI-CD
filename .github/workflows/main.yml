@@ -1,4 +1,4 @@
-name: Java CI 
+name: Java CI
 
 on:
   push:
@@ -24,4 +24,5 @@ jobs:
       run: mvn clean install
 
     - name: Run JUnit tests
-      run: mvn test
+      run: mvn test -Dtest=CalculatorTest
+      working-directory: ../../CalculatorTest.java
