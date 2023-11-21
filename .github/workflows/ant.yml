@@ -16,4 +16,4 @@ jobs:
 
     steps:
     - name: CI/CD with java
-      run: CalculatorTest.java
+      run: ../../lib/CalculatorTest.java
