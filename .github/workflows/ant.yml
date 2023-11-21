@@ -13,6 +13,5 @@ jobs:
     steps:
       - name: Run JUnit tests
         run: |
-          java -cp .: CalculatorTest
-        # Replace 'path/to/your/test-library.jar' with the actual path to your JUnit library
-        # Replace 'CalculatorTest' with your actual test class
+          javac CalculatorTest.java  # Compile the Java file
+          java -cp .: CalculatorTest  # Run the tests
