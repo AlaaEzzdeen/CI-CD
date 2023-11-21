@@ -24,7 +24,10 @@ jobs:
     - name: Download JUnit JAR
       run: curl -O https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
 
+    - name: Download Hamcrest JAR
+      run: curl -O https://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar
+
     - name: Compile and Run JUnit tests
       run: |
-        javac -cp .:junit-4.12.jar Calculator.java CalculatorTest.java
-        java -cp .:junit-4.12.jar org.junit.runner.JUnitCore CalculatorTest
+        javac -cp .:junit-4.12.jar:hamcrest-all-1.3.jar Calculator.java CalculatorTest.java
+        java -cp .:junit-4.12.jar:hamcrest-all-1.3.jar org.junit.runner.JUnitCore CalculatorTest
