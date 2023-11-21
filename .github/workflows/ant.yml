@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Run JUnit tests
         run: |
-          javac CalculatorTest.java  # Compile the Java file
-          java -cp .: CalculatorTest  # Run the tests
+          javac ../../CalculatorTest.java  # Compile the Java file
+          java -cp .: ../../CalculatorTest  # Run the tests
