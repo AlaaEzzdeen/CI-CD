@@ -26,4 +26,4 @@ jobs:
         distribution: 'temurin'
         
     - name: Build with Ant
-      run: javac ../../CalculatorTest.java
+      run: javac CalculatorTest.java
