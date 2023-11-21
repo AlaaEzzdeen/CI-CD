@@ -23,5 +23,8 @@ jobs:
       - name: Build with Ant
         run: ant build  # Replace with your actual build command
 
-      - name: Run tests
-        run: java -cp . ../../CalculatorTest.java  # Replace with your actual test command
+      - name: Run JUnit tests
+        run: |
+          java -cp .: ../../CalculatorTest.java
+        # Replace 'path/to/your/test-library.jar' with the actual path to your JUnit library
+        # Replace 'CalculatorTest' with your actual test class
